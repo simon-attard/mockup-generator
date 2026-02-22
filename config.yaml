@@ -1,10 +1,10 @@
 # Mockup Generator Config
 # ─────────────────────────────────────────────────────────────
 # Run locate.py on each template to find placement coordinates:
-#   python locate.py templates/white_frame.png
+#   venv/bin/python3 locate.py templates/your_frame.png
 #
 # fit_mode options:
-#   stretch  — fill the placement area exactly (default, good when artwork matches frame ratio)
+#   stretch  — fill the placement area exactly (default)
 #   fit      — maintain aspect ratio, letterbox with white padding
 #   fill     — maintain aspect ratio, crop to fill
 # ─────────────────────────────────────────────────────────────
@@ -12,32 +12,29 @@
 output_dir: output
 
 variants:
-  - name: white_frame
-    template: templates/white_frame.png
+  - name: medium_white_frame
+    template: templates/medium_white_frame.png
     fit_mode: stretch
     placement:
-      x: 120       # pixels from left edge of template
-      y: 85        # pixels from top edge of template
-      width: 760   # width of artwork area
-      height: 875  # height of artwork area
+      x: 312
+      y: 172
+      width: 657
+      height: 932
 
-  - name: black_frame
-    template: templates/black_frame.png
+  - name: medium_black_frame
+    template: templates/medium_black_frame.png
     fit_mode: stretch
     placement:
-      x: 130
-      y: 80
-      width: 740
-      height: 870
+      x: 312
+      y: 172
+      width: 657
+      height: 932
 
-  # Add your remaining variants below.
-  # Copy and paste a block, update name/template/placement for each.
-
-  # - name: oak_frame
-  #   template: templates/oak_frame.png
-  #   fit_mode: stretch
-  #   placement:
-  #     x: 125
-  #     y: 82
-  #     width: 750
-  #     height: 868
+  - name: medium_o_frame
+    template: templates/medium_o_frame.png
+    fit_mode: stretch
+    placement:
+      x: 312
+      y: 172
+      width: 657
+      height: 932

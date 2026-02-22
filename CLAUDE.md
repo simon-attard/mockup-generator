@@ -27,8 +27,9 @@
 
 ## GitHub
 - Account: `simon-attard`
-- PAT in macOS keychain: `security find-internet-password -s github.com -a simon-attard -w`
-- Repo not yet created — PAT returned 401 on last attempt, needs investigation
+- Repo: https://github.com/simon-attard/mockup-generator
+- Auth: `gh` CLI (v2.87.2) authenticated via keyring, use full path `/usr/local/Cellar/gh/2.87.2/bin/gh` until terminal is restarted
+- Push via HTTPS with token: `git remote set-url origin https://simon-attard:$(gh auth token)@github.com/simon-attard/mockup-generator.git`
 
 ## Preferences
 - Always ask before pushing to GitHub or taking other actions that affect shared systems
