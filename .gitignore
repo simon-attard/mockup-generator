@@ -1,0 +1,13 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+
+# Generated output
+output/
+
+# Templates (local assets, not versioned)
+templates/
+
+# macOS
+.DS_Store
